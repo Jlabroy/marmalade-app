@@ -1,6 +1,5 @@
 import React from 'react';
-import {Button, Container, Grid, Input, Table} from 'semantic-ui-react';
-import {Link} from 'react-router-dom';
+import {Container, Grid, Input, Table} from 'semantic-ui-react';
 
 class AddUrl extends React.Component {
     constructor(props) {
