@@ -93,7 +93,7 @@ class Register extends React.Component {
                             </Form>
                         </Grid.Column>
                         <Grid.Column computer={16} textAlign="center">
-                            Already registered? <Link to="/login">Login</Link>
+                            Already registered? 
                         </Grid.Column>
                     </Grid>
                 </Container>
