@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { Button, Container, Form, Grid, Input, Message } from 'semantic-ui-react';
 
 class Register extends React.Component {
@@ -93,7 +93,7 @@ class Register extends React.Component {
                             </Form>
                         </Grid.Column>
                         <Grid.Column computer={16} textAlign="center">
-                            Already registered? 
+                            {/*Already registered? <Link to="/login">Login</Link>*/}
                         </Grid.Column>
                     </Grid>
                 </Container>

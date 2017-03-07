@@ -52,7 +52,6 @@ class Routing extends React.Component {
                         </Container>
                     </div>
                     <div className="App-content">
-
                         <Route exact path="/" render={() => (
                             this.state.loggedIn ? (
                                 <App userId={this.state.userId} />
