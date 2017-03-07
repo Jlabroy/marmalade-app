@@ -12,7 +12,7 @@ class App extends Component {
     }
 
     componentWillMount() {
-        fetch('http://localhost:8000/app_dev.php/?user_id=' + this.props.userId, {
+        fetch('/api/?user_id=' + this.props.userId, {
             method: 'get'
         }).then(response => {
             return response.json();

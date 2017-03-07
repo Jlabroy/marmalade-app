@@ -1,5 +1,6 @@
 import React from 'react';
-import {Container, Grid, Input, Table} from 'semantic-ui-react';
+import {Button, Container, Grid, Input, Table} from 'semantic-ui-react';
+import {Link} from 'react-router-dom';
 
 class AddUrl extends React.Component {
     constructor(props) {
@@ -17,7 +18,7 @@ class AddUrl extends React.Component {
 
     _onIndex() {
         this.setState({loading: true});
-        fetch('http://localhost:8000/app_dev.php/page?url=' + encodeURIComponent(this.state.url) + '&user_id=' + this.props.userId, {
+        fetch('/api/page?url=' + encodeURIComponent(this.state.url) + '&user_id=' + this.props.userId, {
             method: 'get'
         }).then(response => {
             if (response.statusCode > 400) {

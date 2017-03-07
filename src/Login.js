@@ -22,7 +22,7 @@ class Login extends React.Component {
     }
 
     _onLogin(email, password) {
-        fetch('http://localhost:8000/app_dev.php/session?email='
+        fetch('/api/session?email='
             + encodeURIComponent(email)
             + '&password=' + encodeURIComponent(password), {
             method: 'get'

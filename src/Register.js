@@ -27,7 +27,7 @@ class Register extends React.Component {
     }
 
     _onRegister(firstName, email, password) {
-        fetch('http://localhost:8000/app_dev.php/user?first_name='
+        fetch('/api/user?first_name='
             + encodeURIComponent(firstName)
             + '&password=' + encodeURIComponent(password)
             + '&email=' + encodeURIComponent(email), {
