@@ -13,6 +13,9 @@ import Login from './Login';
 
 import './index.css';
 
+import createBrowserHistory from 'history/createBrowserHistory'
+const history = createBrowserHistory()
+
 class Routing extends React.Component {
     constructor(props) {
         super(props);
@@ -39,7 +42,7 @@ class Routing extends React.Component {
         };
 
         return (
-            <Router>
+            <Router history={history}>
                 <div className="App">
                     <Sidebar {...this.state} />
                     <div className="App-content-header">
