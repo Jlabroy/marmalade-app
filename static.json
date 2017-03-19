@@ -7,6 +7,9 @@
   "proxies": {
     "/api/": {
       "origin": "${API_URL}"
+    },
+    "/crawler/": {
+      "origin": "${CRAWLER_URL}"
     }
   }
 }
