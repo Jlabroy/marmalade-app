@@ -17,7 +17,7 @@ class AddUrl extends React.Component {
 
     _onIndex() {
         this.setState({loading: true});
-        fetch('/api/page?url=' + encodeURIComponent(this.state.url) + '&user_id=' + this.props.userId, {
+        fetch('https://marmalade-crawler.herokuapp.com/?url=' + encodeURIComponent(this.state.url) + '&user_id=' + this.props.userId, {
             method: 'get'
         }).then(response => {
             if (response.statusCode > 400) {
