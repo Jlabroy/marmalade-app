@@ -42,7 +42,6 @@ class AddUrl extends React.Component {
                 <Grid>
                     <Grid.Row>
                         <Grid.Column>
-
                             <Table celled striped>
                                 <Table.Header>
                                     <Table.Row>
@@ -68,7 +67,6 @@ class AddUrl extends React.Component {
                                         </Table.Cell>
                                     </Table.Row>
                                 </Table.Body>
-
                             </Table>
                         </Grid.Column>
                     </Grid.Row>

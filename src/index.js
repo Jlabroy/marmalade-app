@@ -10,6 +10,7 @@ import AddUrl from './AddUrl';
 import Payment from './Payment';
 import Register from './Register';
 import Login from './Login';
+import Code from './Code';
 
 import './index.css';
 
@@ -33,13 +34,9 @@ class Routing extends React.Component {
     }
 
     render() {
-        const AddUrlWrapper = () => {
-            return <AddUrl userId={this.state.userId} />
-        };
-
-        const PaymentWrapper = () => {
-            return <Payment userId={this.state.userId} />
-        };
+        const AddUrlWrapper = () => <AddUrl userId={this.state.userId} />;
+        const PaymentWrapper = () => <Payment userId={this.state.userId} />;
+        const CodeWrapper = () => <Code userId={this.state.userId} />;
 
         return (
             <Router history={history}>
@@ -63,6 +60,7 @@ class Routing extends React.Component {
                             )
                         )} />
                         <Route path="/add-url" userId={this.state.userId} component={AddUrlWrapper}/>
+                        <Route path="/code" userId={this.state.userId} component={CodeWrapper}/>
                         <Route path="/payment" userId={this.state.userId} component={PaymentWrapper}/>
                         <Route path="/register" render={() => (
                             this.state.loggedIn ? (
